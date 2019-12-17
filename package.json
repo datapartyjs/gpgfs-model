@@ -1,0 +1,29 @@
+{
+  "name": "gpgfs-model",
+  "private": false,
+  "version": "0.1.0",
+  "description": "gpgfs dataparty model",
+  "author": "RosHub Inc. <code@roshub.io>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datapartyjs/gpgfs-model.git"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "mkdir -p dist; npx -q ./src/build-model.js | tee  ./dist/gpgfs-model.json > /dev/null",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "@dataparty/bouncer-model": "^1.0.1",
+    "debug": "^4.1.1",
+    "json-schema-to-typescript": "^8.0.0",
+    "mongoose": "^5.8.1",
+    "mongoose-schema-jsonschema": "^1.2.1"
+  }
+}
