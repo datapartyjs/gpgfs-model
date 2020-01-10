@@ -11,23 +11,16 @@ class ObjectMeta extends BouncerModel.Model {
 
   static get Schema(){
     return {
+      owner: String,
       bucketId: Utils.actor('bucket_meta'),
       objectId: Utils.actor('object_meta'),
       created: Utils.created,
       lastchanged: Utils.created,
       path: Utils.string(300,3),
-      size: Number,
       meta: [ String ],
       readers: [ String ],
       writers: [ String ],
-
-      cleartext: Boolean,
-      md5sum: Utils.string(32,32),
-      lastchange: {
-        actor: String,
-        changed: Utils.created,
-        signature: String
-      }
+      cleartext: Boolean
     }
   }
 

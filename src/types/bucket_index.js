@@ -17,7 +17,7 @@ class BucketIndex extends BouncerModel.Model {
       lastchanged: Utils.created,
       objects: [{
         created: Utils.created,
-        objectId: Utils.actor('bucket_object_meta'),
+        objectId: Utils.actor('object_meta'),
         path: String,
         size: Number,
         created: Utils.created,

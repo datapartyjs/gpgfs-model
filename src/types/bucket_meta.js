@@ -11,6 +11,7 @@ class BucketMeta extends BouncerModel.Model {
 
   static get Schema(){
     return {
+      owner: String,
       bucketId: Utils.actor('bucket_meta'),
       bucketName: Utils.string(64, 2),
       created: Utils.created,
