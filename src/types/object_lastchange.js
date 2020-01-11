@@ -15,7 +15,10 @@ class ObjectLastchange extends BouncerModel.Model {
       objectId: Utils.actor('object_meta'),
       lastchanged: Utils.created,
       size: Number,
-      md5sum: Utils.string(32,32),
+      hash: {
+        md5sum: Utils.string(32,32),
+        sha256: String
+      },
       actor: String
     }
   }
