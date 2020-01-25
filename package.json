@@ -1,7 +1,7 @@
 {
   "name": "gpgfs-model",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "gpgfs dataparty model",
   "author": "RosHub Inc. <code@roshub.io>",
   "license": "Apache-2.0",
@@ -20,7 +20,7 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@dataparty/bouncer-model": "^1.0.1",
+    "@dataparty/bouncer-model": "^1.2.0",
     "debug": "^4.1.1",
     "json-schema-to-typescript": "^8.0.0",
     "mongoose": "^5.8.1",
