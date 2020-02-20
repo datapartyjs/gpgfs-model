@@ -14,6 +14,16 @@ class BucketMeta extends BouncerModel.Model {
       owner: String,
       bucketId: Utils.actor('bucket_meta'),
       bucketName: Utils.string(64, 2),
+      bucketKeys: {
+        fingerprints: {
+          read: String,
+          meta: String
+        },
+        publics: {
+          read: String,
+          meta: String
+        }
+      },
       created: Utils.created,
       lastchanged: Utils.created,
       cleartext: Boolean,
