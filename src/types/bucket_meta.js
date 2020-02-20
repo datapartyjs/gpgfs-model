@@ -29,7 +29,7 @@ class BucketMeta extends BouncerModel.Model {
       cleartext: Boolean,
       meta: [ String ],         //! Keys used by metadata services who can read **ALL** object metadata
       readers: [ String ],    //! Keys used by users who can read **ALL** bucket-index and objects
-      writers: [ String ],    //! Keys used by users who can write **ALL** bucket-index objects
+      writers: [ String ]     //! Keys used by users who can write **ALL** bucket-index objects
     }
   }
 
