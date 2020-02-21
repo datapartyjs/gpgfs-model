@@ -14,12 +14,22 @@ class BucketMeta extends BouncerModel.Model {
       owner: String,
       bucketId: Utils.actor('bucket_meta'),
       bucketName: Utils.string(64, 2),
+      bucketKeys: {
+        fingerprints: {
+          read: String,
+          meta: String
+        },
+        publics: {
+          read: String,
+          meta: String
+        }
+      },
       created: Utils.created,
       lastchanged: Utils.created,
       cleartext: Boolean,
       meta: [ String ],         //! Keys used by metadata services who can read **ALL** object metadata
       readers: [ String ],    //! Keys used by users who can read **ALL** bucket-index and objects
-      writers: [ String ],    //! Keys used by users who can write **ALL** bucket-index objects
+      writers: [ String ]     //! Keys used by users who can write **ALL** bucket-index objects
     }
   }
 

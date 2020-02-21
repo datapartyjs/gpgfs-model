@@ -1,7 +1,7 @@
 {
   "name": "gpgfs-model",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "gpgfs dataparty model",
   "author": "RosHub Inc. <code@roshub.io>",
   "license": "Apache-2.0",
