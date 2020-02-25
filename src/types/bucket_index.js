@@ -21,7 +21,8 @@ class BucketIndex extends BouncerModel.Model {
         path: String,
         size: Number,
         lastchanged: Utils.created
-      }]
+      }],
+      dirs:[String]
     }
   }
 
