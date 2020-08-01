@@ -22,7 +22,11 @@ class BucketIndex extends BouncerModel.Model {
         size: Number,
         lastchanged: Utils.created
       }],
-      dirs:[String]
+      dirs:[{
+        path: String,
+        files: [ Utils.actor('object_meta') ],  //! objectId
+        
+      }]
     }
   }
 

@@ -12,21 +12,6 @@ class MountPoint extends BouncerModel.Model {
   static get Schema(){
     return {
       created: Utils.created,
-      gpgfs: {
-        type: String,   //! fs, gce, sftp
-        owner: String,
-        options: Object,
-        buckets: [{
-          id: Utils.actor('bucket_meta'),
-          name: Utils.string(64, 2),
-          keys: {
-            fingerprints: {
-              read: String,
-              meta: String
-            }
-          }
-        }]
-      },
       mount: {
         automount: Boolean,
         mountpoint: String,
